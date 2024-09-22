@@ -6,12 +6,11 @@ dotenv.config();
 import app from '@config/serverOptions';
 
 // Import routes
-
+import { routerLender } from '@routes/lender';
 
 // Use routes
-// app.use('/api/vehicleCompany', routerVehicleCompany);
+app.use('/lender', routerLender);
 
-// Error handling
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 app.use((err: any, res: Response) => {
   res.status(500).send({ message: err.message });

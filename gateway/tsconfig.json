@@ -11,16 +11,10 @@
     "baseUrl": "./src/",
     "moduleResolution": "node",
     "paths": {
-      "@controller/*": ["controller/*"],
-      "@config/*": ["config/*"],
-      "@dto/*": ["dto/*"],
-      "@helpers/*": ["helpers/*"],
-      "@interfaces/*": ["interfaces/*"],
-      "@middleware/*": ["middleware/*"],
-      "@repositories/*": ["repositories/*"],
       "@routes/*": ["routes/*"],
+      "@controller/*": ["controller/*"],
       "@services/*": ["services/*"],
-      "@testJson/*": ["testJson/*"]
+
     }
   },
   "include": ["src/**/*"],
