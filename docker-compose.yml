@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build:
+      context: ./auth-service
+    ports:
+      - '3001:3000'
+    env_file: ./auth-service/.env
+
+  gateway:
+    build:
+      context: ./gateway
+    ports:
+      - '3002:3000'
+    env_file: ./gateway/.env
+
+  loan-service:
+    build:
+      context: ./loan-service
+    ports:
+      - '3003:3000'
+    env_file: ./loan-service/.env
+
+  payment-service:
+    build:
+      context: ./payment-service
+    ports:
+      - '3004:3000'
+    env_file: ./payment-service/.env

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./node_modules/@types"],
+    "outDir": "./dist",
+    "baseUrl": "./src/",
+    "moduleResolution": "node",
+    "paths": {
+      "@controller/*": ["controller/*"],
+      "@config/*": ["config/*"],
+      "@dto/*": ["dto/*"],
+      "@helpers/*": ["helpers/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@middleware/*": ["middleware/*"],
+      "@repositories/*": ["repositories/*"],
+      "@routes/*": ["routes/*"],
+      "@services/*": ["services/*"],
+      "@testJson/*": ["testJson/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules","dist"]
+}

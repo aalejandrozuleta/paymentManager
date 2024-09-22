@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10"
+  }
+}
