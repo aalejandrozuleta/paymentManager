@@ -9,3 +9,13 @@ export const routerLender: Router = express.Router();
 import { registerController } from '@controller/register';
 import { registerValidation } from '@middleware/register';
 routerLender.post('/register',registerValidation, registerController);
+
+/**
+ * @route POST /Auth
+ * @description Iniciar sesión en el sistema
+ * @access Público
+ */
+
+import { authController } from '@controller/auth';
+import { authValidation } from '@middleware/auth';
+routerLender.post('/auth',authValidation, authController);

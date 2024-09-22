@@ -2,7 +2,7 @@ import { createClient } from 'redis';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const client = createClient({
+export const client = createClient({
   password: process.env.REDIS_PASSWORD,
   socket: {
     host: process.env.REDIS_HOST,
@@ -10,7 +10,7 @@ const client = createClient({
   },
 });
 
-const checkRedisCodeConnectionCode = async () => {
+export const checkRedis = async () => {
   try {
     await client.connect();
     console.info('Conexión a la base de datos Redis exitosa.');
@@ -18,4 +18,3 @@ const checkRedisCodeConnectionCode = async () => {
     console.error('Error al conectar con Redis:', error);
   }
 };
-export { client, checkRedisCodeConnectionCode };

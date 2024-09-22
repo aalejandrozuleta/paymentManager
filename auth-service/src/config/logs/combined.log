@@ -92,3 +92,33 @@
 {"_birthDate":"2000-01-01","_email":"Carlosperea@example.com","_identification":"123456711","_lastName":"perea","_name":"Carlos","_password":"Contraseña@123","_phone":"3123456789","level":"info","message":"Datos del userDto:","timestamp":"2024-09-22T19:29:56.860Z"}
 {"error":"El usuario ya existe","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T19:29:56.872Z"}
 {"level":"info","message":"Método: POST | URL: /lender/register | Estado: 500","timestamp":"2024-09-22T19:29:56.878Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:35:33.806Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:36:17.212Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:36:21.373Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:36:24.897Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:38:26.758Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:40:48.104Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:41:37.598Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:41:55.321Z"}
+{"errors":[{"location":"body","msg":"El email no es válido","path":"email","type":"field","value":"Carlosperea@example.com1"}],"level":"warn","message":"Validación fallida","timestamp":"2024-09-22T20:41:57.570Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 400","timestamp":"2024-09-22T20:41:57.573Z"}
+{"error":"Usuario no encontrado","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T20:42:04.380Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-22T20:42:04.384Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:42:11.991Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:42:15.893Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:42:51.618Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T20:53:12.181Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:17:48.396Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:17:54.149Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:18:12.822Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:19:51.907Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:20:40.805Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:21:09.780Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:21:17.799Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:21:22.951Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T21:22:38.616Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-22T21:22:38.627Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:22:53.255Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:23:14.449Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T21:23:18.979Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-22T21:23:18.982Z"}
