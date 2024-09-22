@@ -87,3 +87,5 @@
 ::ffff:127.0.0.1 - - [22/Sep/2024:19:21:45 +0000] "POST /lender/register HTTP/1.1" 500 129 "-" "insomnia/10.0.0"
 ::1 - - [22/Sep/2024:19:26:06 +0000] "POST /lender/register HTTP/1.1" 500 310 "-" "insomnia/10.0.0"
 ::1 - - [22/Sep/2024:19:27:22 +0000] "POST /lender/register HTTP/1.1" 500 310 "-" "insomnia/10.0.0"
+::1 - - [22/Sep/2024:19:29:45 +0000] "POST /lender/register HTTP/1.1" 201 42 "-" "insomnia/10.0.0"
+::1 - - [22/Sep/2024:19:29:56 +0000] "POST /lender/register HTTP/1.1" 500 32 "-" "insomnia/10.0.0"

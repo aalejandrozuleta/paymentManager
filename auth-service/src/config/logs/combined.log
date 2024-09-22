@@ -86,3 +86,9 @@
 {"_birthDate":"2000-01-01","_email":"Carlosperea@example.com","_identification":"123456711","_lastName":"perea","_name":"Carlos","_password":"Contraseña@123","_phone":"3123456789","level":"info","message":"Datos del userDto:","timestamp":"2024-09-22T19:27:22.664Z"}
 {"error":"Lender validation failed: password: Path `password` is required., email: Path `email` is required., phone: Path `phone` is required., birthDate: Path `birthDate` is required., identification: Path `identification` is required., lastName: Path `lastName` is required., name: Path `name` is required.","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T19:27:22.794Z"}
 {"level":"info","message":"Método: POST | URL: /lender/register | Estado: 500","timestamp":"2024-09-22T19:27:22.801Z"}
+{"_birthDate":"2000-01-01","_email":"Carlosperea@example.com","_identification":"123456711","_lastName":"perea","_name":"Carlos","_password":"Contraseña@123","_phone":"3123456789","level":"info","message":"Datos del userDto:","timestamp":"2024-09-22T19:29:45.418Z"}
+{"email":"Carlosperea@example.com","level":"info","message":"Usuario creado exitosamente","timestamp":"2024-09-22T19:29:45.533Z"}
+{"level":"info","message":"Método: POST | URL: /lender/register | Estado: 201","timestamp":"2024-09-22T19:29:45.539Z"}
+{"_birthDate":"2000-01-01","_email":"Carlosperea@example.com","_identification":"123456711","_lastName":"perea","_name":"Carlos","_password":"Contraseña@123","_phone":"3123456789","level":"info","message":"Datos del userDto:","timestamp":"2024-09-22T19:29:56.860Z"}
+{"error":"El usuario ya existe","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T19:29:56.872Z"}
+{"level":"info","message":"Método: POST | URL: /lender/register | Estado: 500","timestamp":"2024-09-22T19:29:56.878Z"}
