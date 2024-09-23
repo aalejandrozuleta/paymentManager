@@ -20,9 +20,9 @@
       "@repositories/*": ["repositories/*"],
       "@routes/*": ["routes/*"],
       "@services/*": ["services/*"],
-      "@testJson/*": ["testJson/*"]
+      "@models/*": ["models/*"]
     }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules","dist"]
+  "exclude": ["node_modules", "dist"]
 }

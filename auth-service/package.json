@@ -65,6 +65,6 @@
     "@repositories": "dist/repositories",
     "@routes": "dist/routes",
     "@services": "dist/services",
-    "@testJson": "dist/testJson"
+    "@models": "dist/models"
   }
 }

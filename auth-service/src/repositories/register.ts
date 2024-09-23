@@ -1,5 +1,5 @@
 import { RegisterDto } from '@dto/register';
-import { Lender } from 'models/register';
+import { Lender } from '@models/register';
 
 export class RegisterRepository {
   // Método para guardar un prestamista en la base de datos
