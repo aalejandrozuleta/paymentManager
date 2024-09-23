@@ -28,3 +28,8 @@
 {"error":"Usuario no encontrado","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T20:42:04.380Z"}
 {"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T21:22:38.616Z"}
 {"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T21:23:18.979Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:06.946Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:09.685Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:10.880Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:11.944Z"}
+{"error":"Demasiados intentos fallidos. Por favor, inténtelo de nuevo más tarde.","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:12.616Z"}

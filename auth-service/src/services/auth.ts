@@ -9,7 +9,6 @@ import {
 import { getTokenFromRedis } from '@helpers/redis/getTokenFromRedis';
 import { saveTokenToRedis } from '@helpers/redis/saveToken';
 import { AuthRepository } from '@repositories/auth';
-import { log } from 'console';
 
 /**
  * Servicio de autenticación para usuarios.
@@ -43,7 +42,7 @@ export const authService = async (user: AuthDto) => {
     );
   }
   const credential = await AuthRepository.findUser(user);
-  
+
   if (!credential) {
     await incrementFailedAttempts(user.email);
     throw new Error('Usuario no encontrado');
@@ -53,7 +52,7 @@ export const authService = async (user: AuthDto) => {
     name: credential,
     email: user.email,
     password: credential,
-    blockUser: await isBlocked(user.email) ? 1 : 0,
+    blockUser: (await isBlocked(user.email)) ? 1 : 0,
   };
 
   const isValid = await comparePassword(user.password, userData.password);

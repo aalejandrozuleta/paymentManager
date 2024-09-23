@@ -122,3 +122,14 @@
 {"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-22T21:23:14.449Z"}
 {"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-22T21:23:18.979Z"}
 {"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-22T21:23:18.982Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:06.946Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-23T01:39:06.955Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:09.685Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-23T01:39:09.687Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:10.880Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-23T01:39:10.883Z"}
+{"error":"Contraseña incorrecta","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:11.944Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-23T01:39:11.946Z"}
+{"error":"Demasiados intentos fallidos. Por favor, inténtelo de nuevo más tarde.","level":"error","message":"Error al registrar usuario","timestamp":"2024-09-23T01:39:12.616Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 500","timestamp":"2024-09-23T01:39:12.618Z"}
+{"level":"info","message":"Método: POST | URL: /lender/auth | Estado: 200","timestamp":"2024-09-23T01:39:53.525Z"}
