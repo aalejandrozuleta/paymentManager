@@ -1,11 +1,11 @@
 // controllers/authController.ts
 import { Request, Response } from 'express';
-import { proxyRequest } from '@services/proxyAuth';
+import { proxyRequest } from '@services/proxyShared';
 
-export const authLender = async (req: Request, res: Response) => {
-  const authServiceUrl = process.env.AUTH_SERVICE_URL || '';
+export const emailsShared = async (req: Request, res: Response) => {
+  const sharedUrl = process.env.SHARED_URL || '';
   try {
-    const response = await proxyRequest(req, authServiceUrl);
+    const response = await proxyRequest(req, sharedUrl);
     res.status(response.status).json(response.data);
   } catch (error) {
     // Manejar errores, proporcionando un mensaje claro

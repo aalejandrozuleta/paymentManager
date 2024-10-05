@@ -1,18 +1,39 @@
 {
   "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register src/app.ts",
+    "start": "node -r module-alias/register dist/app.js",
     "build": "tsc"
   },
   "dependencies": {
+    "@sendinblue/client": "^3.3.1",
     "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
     "express-validator": "^7.2.0",
     "jsonwebtoken": "^9.0.2",
-    "lodash": "^4.17.21",
-    "moment": "^2.30.1"
+    "module-alias": "^2.2.3",
+    "moment": "^2.30.1",
+    "morgan": "^1.10.0",
+    "node-mailjet": "^6.0.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.5.5",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0"
   },
   "_moduleAliases": {
-    "@middleware/*": "dist/middlewares",
-    "@types/*": "dist/types",
-    "@utils/*": "dist/utils"
+    "@middleware": "dist/middlewares",
+    "@types": "dist/types",
+    "@utils": "dist/utils",
+    "@config": "dist/config",
+    "@controller": "dist/controller",
+    "@routes": "dist/routes"
   }
 }
-

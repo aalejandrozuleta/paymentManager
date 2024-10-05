@@ -3,7 +3,6 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import rateLimit from 'express-rate-limit';
 import morgan from 'morgan';
-import { routerAuth } from '@routes/authRoutes';
 
 dotenv.config();
 
@@ -21,12 +20,16 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+// Rutas
+import { routerAuth } from '@routes/authRoutes';
+import { routerShared } from '@routes/routerShared';
+
 // Middleware de rutas
 app.use('/api/auth', routerAuth);
-
+app.use('/api/shared', routerShared);
 
 // Puerto de escucha
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
-  console.log(`Gateway escuchando en el puerto ${PORT}`);
+  console.info(`Gateway escuchando en el puerto ${PORT}`);
 });
