@@ -7,11 +7,8 @@ export const registerLender = async (req: Request, res: Response) => {
   try {
     const response = await proxyRequest(req, authServiceUrl);
     res.status(response.status).json(response.data);
-  } catch (error) {
-    // Manejar errores, proporcionando un mensaje claro
-    const errorMessage =
-      error instanceof Error ? error.message : 'Ocurrió un error desconocido';
-
-    return res.status(500).json({ error: errorMessage });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (error: any) {
+    res.status(error.status || 500).json(error.data || 'Internal Server Error');
   }
 };
