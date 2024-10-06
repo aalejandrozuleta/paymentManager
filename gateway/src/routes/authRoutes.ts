@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { jwtAuthMiddleware } from 'middlewares/jwtValidation';
+import { jwtAuthMiddleware } from '@middlewares/jwtValidation';
 import { authController } from '@controller/auth-service/authController';
 
 export const routerAuth = Router();
