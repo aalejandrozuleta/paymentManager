@@ -11,13 +11,18 @@ export const app = express();
 // Cargar las variables de entorno desde .env
 dotenv.config(); // Cargar configuraciones de entorno
 
-// Habilitar CORS para todas las rutas
-app.use(cors({
-  origin: process.env.CORS_ORIGIN, // Permitir solo el origen especificado
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos permitidos
-  allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
-  credentials: true, // Permitir credenciales
-}));
+// Configuración de middleware
+const allowedOrigins = [process.env.CORS_FRONTEND, process.env.CORS_BACKEND];
+app.use(
+  cors({
+    origin: allowedOrigins.filter(
+      (origin): origin is string => typeof origin === 'string',
+    ),
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }),
+);
 
 // Agrega morgan como middleware
 app.use(morgan('combined'));
@@ -28,11 +33,12 @@ app.use(morganMiddleware);
 // Agregar el logger como middleware para manejar logs adicionales
 app.use((req, res, next) => {
   res.on('finish', () => {
-    logger.info(`Método: ${req.method} | URL: ${req.originalUrl} | Estado: ${res.statusCode}`);
+    logger.info(
+      `Método: ${req.method} | URL: ${req.originalUrl} | Estado: ${res.statusCode}`,
+    );
   });
   next();
 });
-
 
 // Habilitar el manejo de JSON
 app.use(express.json()); // Habilitar el parseo de JSON en el cuerpo de las solicitudes
@@ -49,7 +55,9 @@ checkDatabaseConnection()
   .then(() => {
     const PORT: string | number = process.env.PORT || 8000;
     app.listen(PORT, () => {
-      console.info(`Servidor auth-service corriendo en el puerto http://localhost:${PORT}`);
+      console.info(
+        `Servidor auth-service corriendo en el puerto http://localhost:${PORT}`,
+      );
     });
   })
   .catch((error: string) => {

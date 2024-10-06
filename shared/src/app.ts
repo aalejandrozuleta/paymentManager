@@ -8,7 +8,18 @@ const app = express();
 app.use(express.json());
 
 // Configuración de middleware
-app.use(cors());
+const allowedOrigins = [process.env.CORS_FRONTEND, process.env.CORS_BACKEND];
+app.use(
+  cors({
+    origin: allowedOrigins.filter(
+      (origin): origin is string => typeof origin === 'string',
+    ),
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }),
+);
+
 app.use(morgan('combined'));
 
 // Rutas
