@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import rateLimit from 'express-rate-limit';
 import morgan from 'morgan';
+import { checkRedis } from '@config/redis';
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ import { routerShared } from '@routes/routerShared';
 app.use('/api/auth', routerAuth);
 app.use('/api/shared', routerShared);
 
+checkRedis();
 // Puerto de escucha
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {

@@ -10,6 +10,6 @@ export const saveTokenToRedis = async (email: string, token: string) => {
     }
   } catch (error) {
     console.error('Error:', error);
-    throw error; // Re-lanzar el error para el controlador
+    throw error; // Re-lanzar el error para el controladorc
   }
 };
