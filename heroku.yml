@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: ./gateway/Dockerfile # Cambia esto si usas un Dockerfile diferente para el punto de entrada
+run:
+  web: npm start
